@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App5.Activity5">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- Style for EntryCell -->
+            <Style TargetType="Entry">
+                <Setter Property="PlaceholderColor" Value="#757575" />
+                <Setter Property="TextColor" Value="#000000" />
+                <Setter Property="HeightRequest" Value="40" />
+            </Style>
+
+            <!-- Style for Button -->
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#2196F3" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="CornerRadius" Value="5" />
+                <Setter Property="Margin" Value="10,20,10,0" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Enter Your Firstname" x:Name="fname" Margin="10" />
+            <Entry Placeholder="Enter Your Lastname" x:Name="lname" Margin="10" />
+            <Entry Placeholder="Enter Your Email" x:Name="email" Margin="10" />
+            <Button Text="Submit" Clicked="OnSubmitEntry"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
